@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>array的常见方法</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+  // var values = [1, 2, 3, 4, 5];
+  // // reverse方法，可以为数组元素重新排序
+  // values.reverse();
+  // alert(values)
+
+  // var nums = [1, 2, 3];
+  // // concat方法：基于当前数组的所有项创建一个数组，并且接受参数，加在原数组后
+  // var nums1 = nums.concat(4, [5, 6]);
+  // // slice方法：基于传入数组的一项或者多项创建一个新数组
+  // var nums2 = nums.slice(1, 2);
+  // alert(nums2)
+
+  // splice用法1：删除数组中的项
+  var persons = ['jack', 'tom', 'lily'];
+  var removed = persons.splice(0, 1);
+  console.log(persons);
+  console.log(removed);
+
+  // // splice用法2：插入新项
+  // persons.splice(2, 0, '11', '22');
+  // console.log(persons);
+
+  // // splice用法3：替换
+  // persons.splice(2, 2, '33', '44');
+  // console.log(persons);
+
+  // 数组的位置方法
+  // indexof从前向后找
+  // lastIndexOf从后向前找
+  // var nums = [1, 2, 3, 4, 5, 6];
+
+  // alert(nums.indexOf(2, 3));
+  // alert(nums.lastIndexOf(4, 2));
+
+  // 数组的迭代方法
+  // every:每一项都true则为true
+  // some:有一项为true则为true
+  var nums = [1, 2, 3, 4, 5, 6];
+
+  // var everyResult = nums.every(function (item, index, array) {
+  //   return item > 2;
+  // })
+
+  // var someResult = nums.some(function (item, index, array) {
+  //   return item > 2;
+  // })
+
+  // var filterResult = nums.filter(function (item, index, array) {
+  //   return item > 2;
+  // })
+
+  // var mapResult = nums.map(function (item, index, array) {
+  //   return item - 3;
+  // })
+
+  // nums.forEach(function (item, index, array) {
+  //   console.log(item);
+  // })
+
+  // for (var i = 0; i < nums.length; i++) {
+  //   nums[i] = nums[i] * 2;
+  // }
+
+
+  // console.log(everyResult);
+  // console.log(someResult);
+  // console.log(filterResult);
+  // console.log(mapResult);
+
+
+  // a = function (x, y) { return x + y; }
+  // console.log(a.name);
+</script>
